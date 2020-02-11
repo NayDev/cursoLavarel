@@ -8,7 +8,7 @@
         <script type="text/javascript">
         $(document).ready(function() {
             Materialize.updateTextFields();
-            $(".button-collape").sideNav();
+            $(".button-collapse").sideNav();
         });
         </script>
     </body>
