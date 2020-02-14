@@ -10,19 +10,22 @@
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">
-                    <img src="{{ asset($curso->imagem)}}">
-                   
+                    <img src="{{ asset($curso->imagem)}}"> <!--Pegando Imagem do Banco -->
                 </div>
                 <div class="card-content">
                     <h4>{{$curso->titulo}}</h4>
                     <p>{{$curso->descricao}}</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="#"> Ver mais...</a>
                 </div>
             </div>
         </div>
         @endforeach
+    </div>
+    <div class="row" align="center"> <!-- Fazer a paginação -->
+        {{$cursos->links()}}
+    
     </div>
 </div>
 @endsection
